@@ -1,0 +1,58 @@
+[{
+    "id": 1,
+    "name": "Italian Pizaa",
+    "price": 15,
+    "Deliveryprice": 3,
+    "priceType": "dollar"
+
+  },
+  {
+    "id": 2,
+    "name": "Chicago Pizza",
+    "price": 20,
+    "Deliveryprice": 3,
+    "priceType": "dollar"
+  },
+  {
+    "id": 3,
+    "name": "Nepolitan Pizza",
+    "price": 25,
+    "Deliveryprice": 3,
+    "priceType": "dollar"
+  },
+  {
+    "id": 4,
+    "name": "Pakistani Pizza",
+    "price": 10,
+    "Deliveryprice": 3,
+    "priceType": "dollar"
+  },
+  {
+    "id": 5,
+    "name": "Detroit Pizza",
+    "price": 20,
+    "Deliveryprice": 3,
+    "priceType": "dollar"
+  },
+  {
+    "id": 6,
+    "name": "Silician Pizza",
+    "price": 25,
+    "Deliveryprice": 3,
+    "priceType": "dollar"
+  },
+  {
+    "id": 7,
+    "name": "Greek Pizza",
+    "price": 33,
+    "Deliveryprice": 3,
+    "priceType": "dollar"
+  },
+  {
+    "id": 8,
+    "name": "California Pizza",
+    "price": 40,
+    "Deliveryprice": 3,
+    "priceType": "dollar"
+  }
+]

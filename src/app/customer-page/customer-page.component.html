@@ -1,0 +1,39 @@
+<mat-card class="mainBlock" >
+    <mat-card-title>
+        Choose Your Favourite Pizza
+    </mat-card-title>
+
+    <mat-form-field class="float-right mr-2"  >    
+<mat-select placeholder="Select Currency type" >
+    <mat-option *ngFor="let currency of currencies" [value]="currencye"  (onSelectionChange)="onSelectCurrency(currency)">
+        {{currency}}
+      </mat-option>
+</mat-select>
+    </mat-form-field>
+
+    <div class="subBlock">
+        <mat-card class="subCards" *ngFor="let pizza of pizzas" (click)="onSelectPizza($event, pizza)">
+            <p><b>{{pizza.name}}</b></p>
+            <p>	<mat-icon style="font-size:14px;" *ngIf="euro === true"> euro_symbol </mat-icon><mat-icon style="font-size:16px;" *ngIf="euro === false"> attach_money  </mat-icon>{{(pizza.price).toFixed(2)}}</p>
+            <button style="cursor: pointer;"><mat-icon color="primary">add_shopping_cart</mat-icon></button>
+          <p style="float: right;"><b style="font-size: 10px;">Delivery Charges</b>	<mat-icon style="font-size:14px;" *ngIf="euro === true"> euro_symbol </mat-icon><mat-icon style="font-size:16px;" *ngIf="euro === false"> attach_money  </mat-icon>{{(pizza.Deliveryprice).toFixed(2)}}</p>
+        </mat-card>
+    </div>
+    <div class="cartBlock">
+        <div class="subCarts">
+            <mat-card class="cartItem" *ngFor="let item of cartItems">
+               <p class="float-left"> <b style="font-size: 10px;">price: {{(item.price).toFixed(2)}}</b></p>
+               <mat-icon class="float-right addIcon "  color="primary" (click)="onClickAdd(item)">add</mat-icon>
+                <mat-icon class="float-right removeIcon" color="primary"(click)="onClickRemove(item)">remove</mat-icon>
+                <br>
+                <button style="cursor: none;" color="accent"><b>{{item.count}}</b></button>
+            
+            </mat-card>
+        </div>
+        <div class="totalPrice ">
+           <p><b class="priceText">total Amount</b></p>
+           <b>{{totalAmount}}</b>
+    
+        </div>
+    </div>
+   
