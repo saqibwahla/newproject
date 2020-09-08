@@ -9,7 +9,7 @@ app.use(express.static('./dist/<mypizzadelivery>'));
 
 app.get('/*', function(req,res) {
     
-    res.sendFile('index.html', {root: 'dist/<mypizzadelivery>/'}
+    res.sendFile('./src/index.html', {root: 'dist/<mypizzadelivery>/'}
     );
 });
 
