@@ -34,13 +34,13 @@
     "zone.js": "~0.10.2"
   },
   "engines": {
-    "node": "18.3npm",
-    "npm": "6.14.6"
+    "node": "6.11.0",
+    "npm": "3.10.10"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1001.0",
     "@angular/compiler-cli": "~10.1.0",
-    "@angular/cli": "~10.1.0",
+     "@angular/cli": "~10.1.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
